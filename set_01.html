@@ -8,95 +8,62 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .container1 {
-        height: 100vh;
-        width: 100vw;
-        background-color: #080427;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .circle {
-        background-color: #080427;
-        height: 600px;
-        width: 800px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .c1 {
-        position: absolute;
-        margin-top: -300px;
-        margin-left: 170px;
-        height: 250px;
-        width: 250px;
-        border: 30px solid #080427;
-        border-radius: 200px;
-        background-color: #ecbda1;
-    }
-
-    .c2 {
-        position: absolute;
-        margin-top: 280px;
-        margin-left: 170px;
-
-
-        height: 250px;
-        width: 250px;
-        border: 30px solid #080427;
-        border-radius: 200px;
-        background-color: #ecbda1;
-    }
-
-    .v {
-        width: 600px;
-        height: 200px;
-        background-color: #da8985;
-        border-radius: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .c11 {
-        height: 160px;
-        width: 160px;
-        border-radius: 180px;
-        background-color: #080427;
-        margin-left: 20px;
-        margin-top: 20px;
-
-    }
-
-    .c12 {
-        height: 160px;
-        width: 160px;
-        border-radius: 100px;
-        background-color: #080427;
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-right: 20px;
-    }
+    body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+section {
+  width: 400px;
+  height: 300px;
+  background: #09042a;
+  position: relative;
+  border-radius: 15px;
+}
+div {
+  position: absolute;
+}
+.base {
+  width: 55px;
+  height: 45px;
+  background: #e78481;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  background: #09042a;
+  border-radius: 50%;
+  top: 120px;
+  left: 110px;
+  outline: 10px solid #e78481;
+}
+.c2 {
+  left: 230px;
+}
+.c3,
+.c4 {
+  background: #f5bb9c;
+  outline-color: #09042a;
+  top: 67px;
+  left: 170px;
+}
+.c4 {
+  top: 173px;
+}
 </style>
 
 <body>
-    <div class="container1">
-        <div class="circle">
-            <div class="c1"></div>
-            <div class="v">
-                <div class="c11"></div>
-                <div class="c12"></div>
-            </div>
-            <div class="c2"></div>
-        </div>
-    </div>
+    <section>
+  <div class="base"></div>
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+  <div class="circle c3"></div>
+  <div class="circle c4"></div>
+</section>
 </body>
 
 </html>
